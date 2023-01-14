@@ -1,7 +1,7 @@
 <?php
 
 // 命令行创建表
-//  php bin/hyperf create-user-node table
+//  php bin/hyperf.php create-user-node table
 
 // 发布配置文件
 // user_node.php
@@ -11,7 +11,7 @@
 //  用户表引入UserNode Trait
 
 //  导入数据
-//  php bin/hyperf import-user-node
+//  php bin/hyperf.php import-user-node
 
 // 创建节点,移动节点,删除节点
 
