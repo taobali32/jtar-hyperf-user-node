@@ -1,0 +1,47 @@
+{
+    "name": "jtar/hyperf-user-node",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf"
+    ],
+    "description": "Utils for Hyperf.",
+    "autoload": {
+        "psr-4": {
+            "Jtar\\UserNode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "cvoid/easytree": "^2.0",
+        "hyperf/command": "^3.0",
+        "hyperf/config": "^3.0",
+        "hyperf/context": "^3.0",
+        "hyperf/db-connection": "^3.0",
+        "hyperf/di": "^3.0",
+        "psr/container": "^1.0|^2.0",
+        "psr/event-dispatcher": "^1.0"
+    },
+    "suggest": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "analyse": "phpstan analyse --memory-limit 300M -l 5 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Jtar\\UserNode\\ConfigProvider"
+        }
+    }
+}
