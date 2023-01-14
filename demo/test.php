@@ -35,4 +35,5 @@ $count = AppUserNode::query()->where('ancestor', $id)
 return $this->success('团队人数', ['count' => $count]);
  */
 
+//cvoid/easytree 树包，可以直接把一级的树转换成 children形式使用，具体看文档
 
