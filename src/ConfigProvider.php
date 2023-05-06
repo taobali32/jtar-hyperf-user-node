@@ -29,7 +29,7 @@ class ConfigProvider
                         __DIR__,
                     ],
                     'class_map' => [
-                        ArrayAdapter::class => __DIR__ . '/ClassMap/ArrayAdapter.php',
+                        // ArrayAdapter::class => __DIR__ . '/ClassMap/ArrayAdapter.php',
                     ],
                 ],
             ],
